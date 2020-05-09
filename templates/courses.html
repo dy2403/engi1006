@@ -3,17 +3,67 @@
     <head>
         <!--specifies title of the page !-->
         <title>My Courses</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/archive1.css') }}">
     <head>
     <body>
-    <p>Spring 2020:</p>
-    <p> - Calculus II</p>
-    <p> - Physics: Electricity & Magnetism</p>
-    <p> - Intro to Comp for Eng/App Science </p>
-    <p> - First-Year Seminar: Language and Power</p>
-    <p> - Tai Chi</p>
-    <p>    </p>
-    <p> My favorite class this semester was ENGI1006!</p>
-    <p> I had no experience with coding, but the class showed me that it could
-    be fun!</p>
-    </body>
+    </div>
+    <div class="topnav">
+        <a href="/courses">My courses</a> <br>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Spring semester 2020</h2>
+                <p>This webpage was created as my final assignment of the ENGI1006
+                course! </p>
+                <p> Here are the classes I took in the Spring Semester</p>  
+                <style>
+                table, th, td {
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                }
+                th, td {
+                  padding: 5px;
+                  text-align: left;
+                }
+                </style>
+                <table style="width:50%">
+                  <tr>
+                    <th>Spring 2020 Courses</th>
+                  </tr>
+                  <tr>
+                    <td>Calculus II</td>
+                  </tr>
+                  <tr>
+                    <td>Physics: Electricity & Magnetism</td>
+                  </tr>
+                  <tr>
+                    <td>Intro to Comp for Eng/App Science</td>
+                  <tr>
+                    <td>First-Year Seminar: Language and Power</td>
+                  </tr>
+                  <tr>
+                    <td>Tai Chi</td>
+                  </tr>
+                </table>
+                <br>
+                <h2>Favorite course</h2>
+                <p> My favorite course this semester was ENGI1006!
+                I had no experience with coding, but the class showed me that it could
+                be fun!
+                The homeworks were challenging, but I felt that I learned a lot. 
+                Now, I am planning on taking more Computer Science Courses.</p> 
+                     </div>
+                </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <hs>About me</h2>
+            <p> <img src="static/img/Myphoto.jpeg" width=200, height=200/></p>
+            <p> First-Year Student</p>
+            <p>Intended major: Physics</p>
+            <a href="https://www.twitter.com">Access my favorite website here</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

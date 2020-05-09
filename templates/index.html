@@ -3,12 +3,35 @@
     <head>
         <!--specifies title of the page !-->
         <title>Home</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/archive1.css') }}">
     <head>
     <body>
-    <p>Name: Daniela Hikari Yano</p>
-    <p>First-Year Student</p>
-    <p>Intended major: Physics</p>
-    <a href="/courses">See the courses I took this semester</a>
-    </body>
+    <div class="header">
+         <h1>Home</h1>
+         <p>Welcome to my webpage!</p>
+    </div>
+    <div class="topnav">
+        <a href="/courses">My courses</a> <br>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Welcome to my webpage!</h2>
+                <p>This webpage was created as my final assignment of the ENGI1006
+                course! </p>
+         </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <hs>About me</h2>
+            <p> <img src="static/img/Myphoto.jpeg" width=200, height=200/></p>
+            <p> First-Year Student</p>
+            <p>Intended major: Physics</p>
+            <a href="https://www.twitter.com">Access my favorite website here</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+
 
