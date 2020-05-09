@@ -19,6 +19,11 @@ def home():
 @app.route("/courses")
 def courses():
     return render_template('courses.html')
+
+@app.route("/assignments")
+def assignments():
+    return render_template('assignments.html')
+
 #start the server
 if __name__ == "__main__":
     app.run()
